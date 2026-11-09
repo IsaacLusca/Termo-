@@ -222,7 +222,7 @@ const isTestEnviroment = () => {
 }
 
 const loadWords = async () => {
-    return fetch('/resouces/assets/json/database.json')
+        return fetch('resouces/assets/json/database.json')
                     .then((response) => response.json())
                     .then(({ words }) => words)
                     .catch(() => [])
